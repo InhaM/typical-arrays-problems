@@ -1,12 +1,30 @@
 
 exports.min = function min (array) {
-  return 0;
+    let k=array[0];
+    
+    array.forEach( element => {
+    if (element < k)
+        k = element;        
+    });
+  return k;
 }
 
 exports.max = function max (array) {
-  return 0;
+  let k=array[0];
+    
+    array.forEach( element => {
+    if (element > k)
+        k = element;        
+    });
+  return k;
 }
 
 exports.avg = function avg (array) {
-  return 0;
+ let sum = 0;
+    
+    array.forEach( element => {
+    sum += element;
+        
+    });
+  return sum / array.length;
 }
